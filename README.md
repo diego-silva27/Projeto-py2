@@ -12,24 +12,24 @@ A variável total_value é inicializada com o valor 0. Esta variável será util
 Loop quando verdadeiro:
 
 Use while True para iniciar um loop infinito. Isso significa que o código dentro do loop será executado repetidamente até que uma instrução break seja encontrada.
+Entrada do usuário para o produto:
 
-5. Entrada do usuário para o produto:
-   - O programa solicita ao usuário que insira o nome do produto desejado usando a função input(). O nome do produto é convertido para maiúsculas usando .capitalize().
+O programa exige que o usuário insira o nome do produto desejado usando a função input(). Use .capitalize() para converter nomes de produtos em letras maiúsculas.
+Verifique para concluir a compra:
 
-6. Verificação para finalizar a compra:
-   - Se o usuário inserir "Finalizar compra", o programa exibe uma mensagem "Compra finalizada!" e sai do loop usando break.
+Se o usuário entrar em “checkout”, o programa exibe a mensagem “Purchase Complete!” e usa break para sair do loop.
+Requisitos de quantidade do produto:
 
-7. Solicitação da quantidade do produto:
-   - Se o usuário não finalizar a compra, o programa solicita a quantidade do produto desejado usando input() e converte a entrada para um número inteiro.
+Caso o usuário não conclua a compra, o programa utilizará input() para solicitar a quantidade do produto desejado e converter o input para um número inteiro.
+Cálculo do preço total do produto:
 
-8. Cálculo do preço total do produto:
-   - O programa chama a função calcular_preco_total com os argumentos produto e quantidade inseridos pelo usuário. O preço total do produto é calculado com base na função.
+O programa chama a função calcula_preco_total com os parâmetros de produto e quantidade informados pelo usuário. Calcule o preço total do produto com base nesta função.
+Atualizar valor total da compra:
 
-9. Atualização do valor total da compra:
-   - O preço total do produto é adicionado ao valor_total usando o operador +=.
+Use o operador += para adicionar o preço total do produto a total_value.
 
-10. Exibição do preço total do produto:
-   - O programa exibe o preço total do produto formatado com duas casas decimais.
+Exibição do preço total do produto:
+   - O programa exibe o preço total do produto no formato de duas casas decimais.
 
-11. Exibição do valor total da compra:
-   - Após o loop terminar (quando o usuário finalizar a compra), o programa exibe o valor total da compra formatado com duas casas decimais.
+Exibição do total de compras:
+   - Após o término do loop (quando o usuário finaliza a compra), o programa exibe o valor total da compra formatado com duas casas decimais.
