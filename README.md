@@ -1,16 +1,17 @@
-1. Definição da função calcular_preco_total:
-   - Esta função recebe dois argumentos: produto (o nome do produto) e quantidade (a quantidade desejada).
-   - Dentro da função, é verificado se o produto está na tabela de preços (tabela). Se estiver, o preço total é calculado multiplicando o preço do produto pela quantidade desejada. Caso contrário, uma mensagem de "Produto não encontrado na tabela." é exibida e o preço total é definido como 0.
-   - O preço total é retornado pela função.
+Definição da função calcular_preço_total:
 
-2. Definição da tabela de preços:
-   - É criado um dicionário chamado tabela que contém os nomes dos produtos como chaves e seus preços como valores.
+A função aceita dois parâmetros: produto (nome do produto) e quantidade (quantidade necessária).
+Nesta função, verifique se o produto está na tabela de preços (tabela). Nesse caso, calcule o preço total multiplicando o preço do produto pela quantidade necessária. Caso contrário, será exibida a mensagem “Produto não encontrado na tabela”. é exibido e o preço total é definido como 0.
+Esta função retorna o preço total.
+Definição da tabela de preços:
 
-3. Inicialização da variável valor_total:
-   - A variável valor_total é inicializada com o valor 0. Esta variável será usada para acompanhar o custo total da compra.
+Crie um dicionário chamado tabela que contenha nomes de produtos como chaves e preços como valores.
+Inicialização da variável Total_value:
 
-4. Loop while True:
-   - Um loop infinito é iniciado usando while True. Isso significa que o código dentro do loop será executado repetidamente até que a instrução break seja encontrada.
+A variável total_value é inicializada com o valor 0. Esta variável será utilizada para acompanhar o custo total da compra.
+Loop quando verdadeiro:
+
+Use while True para iniciar um loop infinito. Isso significa que o código dentro do loop será executado repetidamente até que uma instrução break seja encontrada.
 
 5. Entrada do usuário para o produto:
    - O programa solicita ao usuário que insira o nome do produto desejado usando a função input(). O nome do produto é convertido para maiúsculas usando .capitalize().
