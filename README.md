@@ -1,35 +1,13 @@
-Definição da função calcular_preço_total:
+A função calcular_preço_total calcula o custo total de um produto com base na quantidade desejada. Com apenas dois parâmetros, produto e quantidade, essa função realiza verificações importantes.
 
-A função aceita dois parâmetros: produto (nome do produto) e quantidade (quantidade necessária).
-Nesta função, verifique se o produto está na tabela de preços (tabela). Nesse caso, calcule o preço total multiplicando o preço do produto pela quantidade necessária. Caso contrário, será exibida a mensagem “Produto não encontrado na tabela”. é exibido e o preço total é definido como 0.
-Esta função retorna o preço total.
-Definição da tabela de preços:
+Primeiro, ela confere se o produto está na tabela de preços, uma espécie de catálogo onde os produtos e seus preços são listados. Se o produto estiver na tabela, o sistema multiplica o preço unitário pela quantidade desejada para obter o preço total. Mas se o produto não estiver na tabela, uma mensagem avisa que o produto não foi encontrado e o preço total é definido como zero.
 
-Crie um dicionário chamado tabela que contenha nomes de produtos como chaves e preços como valores.
-Inicialização da variável Total_value:
+Depois de todos esses passos, a função retorna o preço total, que é crucial para a conclusão da compra.
 
-A variável total_value é inicializada com o valor 0. Esta variável será utilizada para acompanhar o custo total da compra.
-Loop quando verdadeiro:
+Além disso, o sistema mantém uma variável chamada total_value, que é atualizada com o custo total da compra. Ela começa com zero e é incrementada à medida que novos produtos são selecionados.
 
-Use while True para iniciar um loop infinito. Isso significa que o código dentro do loop será executado repetidamente até que uma instrução break seja encontrada.
-Entrada do usuário para o produto:
+Para tornar a experiência do usuário mais intuitiva, o sistema utiliza um loop infinito que permite navegar pelo catálogo de produtos e escolher as quantidades desejadas. A cada ciclo do loop, o usuário é solicitado a fornecer o nome do produto desejado, facilitando a correspondência com os itens na tabela de preços.
 
-O programa exige que o usuário insira o nome do produto desejado usando a função input(). Use .capitalize() para converter nomes de produtos em letras maiúsculas.
-Verifique para concluir a compra:
+E para finalizar a compra a qualquer momento, basta digitar "checkout", o que encerra o loop e confirma a conclusão da compra.
 
-Se o usuário entrar em “checkout”, o programa exibe a mensagem “Purchase Complete!” e usa break para sair do loop.
-Requisitos de quantidade do produto:
-
-Caso o usuário não conclua a compra, o programa utilizará input() para solicitar a quantidade do produto desejado e converter o input para um número inteiro.
-Cálculo do preço total do produto:
-
-O programa chama a função calcula_preco_total com os parâmetros de produto e quantidade informados pelo usuário. Calcule o preço total do produto com base nesta função.
-Atualizar valor total da compra:
-
-Use o operador += para adicionar o preço total do produto a total_value.
-
-Exibição do preço total do produto:
-   - O programa exibe o preço total do produto no formato de duas casas decimais.
-
-Exibição do total de compras:
-   - Após o término do loop (quando o usuário finaliza a compra), o programa exibe o valor total da compra formatado com duas casas decimais.
+Durante todo o processo, o sistema mantém o usuário informado sobre o custo total da compra, exibindo-o formatado com duas casas decimais, garantindo assim uma experiência de compra transparente e acessível.
